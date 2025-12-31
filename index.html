@@ -1,47 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- ========================= -->
+    <!-- CONFIGURACIÓN BÁSICA -->
+    <!-- ========================= -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/icons/redcastle3.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- ========================= -->
+    <!-- ICONO -->
+    <!-- ========================= -->
+    <link rel="icon" type="image/png" href="/icons/redcastle3.png" />
+
+    <!-- ========================= -->
     <!-- SEO PRINCIPAL -->
-    <title>Castillo Rojo | Derecho Ambiental Corporativo en Colombia</title>
+    <!-- ========================= -->
+    <title>
+      Castillo Rojo | Derecho Ambiental Corporativo en Colombia
+    </title>
 
     <meta
       name="description"
-      content="Firma de Derecho Ambiental Corporativo en Colombia. Licenciamiento ambiental, trámites ante ANLA y CAR, estudios técnicos ambientales y defensa en procesos sancionatorios."
+      content="Castillo Rojo es una firma de Derecho Ambiental Corporativo en Colombia. Especialistas en licenciamiento ambiental, trámites ante ANLA y CAR, estudios técnicos ambientales y defensa en procesos sancionatorios."
     />
 
     <meta
       name="keywords"
-      content="derecho ambiental, abogado ambiental, licenciamiento ambiental colombia, trámites ambientales, ANLA, corporaciones autónomas regionales, proceso sancionatorio ambiental, ICA ambiental"
+      content="derecho ambiental, abogado ambiental colombia, licenciamiento ambiental, ANLA, CAR, proceso sancionatorio ambiental, cumplimiento ambiental, estudios ambientales, ICA ambiental"
     />
 
-    <meta name="author" content="Castillo Rojo – Derecho Ambiental Corporativo" />
+    <meta
+      name="author"
+      content="Castillo Rojo – Derecho Ambiental Corporativo"
+    />
 
-    <!-- Schema Legal (SEO PRO) -->
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Spanish" />
+    <meta name="geo.region" content="CO" />
+    <meta name="geo.placename" content="Colombia" />
+
+    <!-- ========================= -->
+    <!-- OPEN GRAPH (REDES SOCIALES) -->
+    <!-- ========================= -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Castillo Rojo" />
+    <meta
+      property="og:title"
+      content="Castillo Rojo | Derecho Ambiental Corporativo en Colombia"
+    />
+    <meta
+      property="og:description"
+      content="Firma especializada en Derecho Ambiental Corporativo: licencias ambientales, trámites ANLA y CAR, y defensa jurídica ambiental."
+    />
+    <meta property="og:url" content="https://www.elcastillorojo.com" />
+    <meta property="og:image" content="/icons/redcastle3.png" />
+
+    <!-- ========================= -->
+    <!-- SCHEMA.ORG (SEO AVANZADO) -->
+    <!-- ========================= -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "LegalService",
         "name": "Castillo Rojo",
-        "description": "Firma de Derecho Ambiental Corporativo en Colombia",
-        "areaServed": "CO",
+        "url": "https://www.elcastillorojo.com",
+        "logo": "https://www.elcastillorojo.com/icons/redcastle3.png",
+        "description": "Firma de Derecho Ambiental Corporativo en Colombia especializada en licenciamiento ambiental, cumplimiento normativo y procesos sancionatorios.",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Colombia"
+        },
         "serviceType": [
           "Derecho Ambiental",
           "Licenciamiento Ambiental",
-          "Procesos Sancionatorios Ambientales"
+          "Procesos Sancionatorios Ambientales",
+          "Cumplimiento Normativo Ambiental"
         ]
       }
     </script>
   </head>
 
   <body>
-    <!-- React se monta aquí -->
+    <!-- ========================= -->
+    <!-- ROOT DE REACT -->
+    <!-- ========================= -->
     <div id="root"></div>
 
-    <!-- Script principal de Vite -->
+    <!-- ========================= -->
+    <!-- SCRIPT PRINCIPAL (VITE) -->
+    <!-- ========================= -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
