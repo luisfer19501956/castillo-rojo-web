@@ -6,7 +6,7 @@ const ProcesoSancionatorioAmbientalColombia = () => {
   return (
     <section className="px-6 py-20 max-w-5xl mx-auto text-gray-800">
 
-      {/* Icono superior izquierdo (no fijo) */}
+      {/* Icono superior izquierdo */}
       <div className="mb-10">
         <img
           src="/icons/redcastle3.png"
@@ -22,51 +22,62 @@ const ProcesoSancionatorioAmbientalColombia = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="mb-6">
-  <Link
-    to="/"
-    className="inline-flex items-center gap-2 text-red-700 hover:text-red-900 transition"
-    aria-label="Volver al inicio"
-  >
-    <img
-      src="/icons/redcastle3.png"
-      alt="Castillo Rojo – Inicio"
-      className="w-10 h-10 object-contain"
-    />
-    <span className="text-sm font-semibold hidden sm:inline">
-      Volver al inicio
-    </span>
-  </Link>
-</div>
-<nav
-  aria-label="Breadcrumb"
-  className="mb-8 text-sm text-gray-600"
->
-  <ol className="flex flex-wrap items-center gap-2">
-    <li>
-      <Link to="/" className="hover:text-red-700 transition">
-        Inicio
-      </Link>
-    </li>
-
-    <li>/</li>
-
-    <li>
-      <Link to="/#servicios" className="hover:text-red-700 transition">
-        Servicios
-      </Link>
-    </li>
-
-    <li>/</li>
-
-    <li className="text-gray-800 font-semibold">
-      Proceso Sancionatorio Ambiental
-    </li>
-  </ol>
-</nav>
-
         Proceso Sancionatorio Ambiental en Colombia
       </motion.h1>
+
+      {/* Breadcrumb y volver al inicio */}
+      <div className="mb-6">
+        <Link
+          to="/"
+          className="inline-flex items-center gap-2 text-red-700 hover:text-red-900 transition"
+          aria-label="Volver al inicio"
+        >
+          <img
+            src="/icons/redcastle3.png"
+            alt="Castillo Rojo – Inicio"
+            className="w-10 h-10 object-contain"
+          />
+          <span className="text-sm font-semibold hidden sm:inline">
+            Volver al inicio
+          </span>
+        </Link>
+      </div>
+
+      <nav aria-label="Breadcrumb" className="mb-8 text-sm text-gray-600">
+        <ol className="flex flex-wrap items-center gap-2">
+          <li>
+            <Link to="/" className="hover:text-red-700 transition">
+              Inicio
+            </Link>
+          </li>
+
+          <li>/</li>
+
+          <li>
+            <Link to="/#servicios" className="hover:text-red-700 transition">
+              Servicios
+            </Link>
+          </li>
+
+          <li>/</li>
+
+          <li className="text-gray-800 font-semibold">
+            Proceso Sancionatorio Ambiental
+          </li>
+        </ol>
+      </nav>
+
+      {/* ***** IMAGEN PRINCIPAL ***** */}
+      <div className="w-full flex justify-center my-8">
+        <div className="w-full max-w-3xl aspect-video rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="/sanc.png"
+            alt="Proceso sancionatorio ambiental en Colombia"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      </div>
 
       <p className="text-lg leading-relaxed mb-6">
         El <strong>proceso sancionatorio ambiental</strong> es el mecanismo mediante el cual
@@ -121,3 +132,4 @@ const ProcesoSancionatorioAmbientalColombia = () => {
 };
 
 export default ProcesoSancionatorioAmbientalColombia;
+
