@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import LineaJurisprudencial from "../components/LineaJurisprudencial";
 
 const ProcesoSancionatorioAmbientalColombia = () => {
   return (
@@ -114,6 +115,18 @@ const ProcesoSancionatorioAmbientalColombia = () => {
         <li>Afectaciones reputacionales y contractuales.</li>
       </ul>
 
+      {/* 🔴 NUEVA SECCIÓN AGREGADA: ANÁLISIS DE SENTENCIAS */}
+      <h2 className="text-2xl font-bold text-red-700 mt-12 mb-4">
+        Análisis de sentencias en materia sancionatoria ambiental
+      </h2>
+
+      <p className="text-lg leading-relaxed mb-10">
+        Realizamos <strong>análisis especializado de jurisprudencia ambiental</strong>,
+        identificando criterios de las Altas Cortes que inciden directamente en la
+        responsabilidad ambiental, graduación de sanciones, debido proceso administrativo,
+        valoración de pruebas técnicas y prescripción de la acción sancionatoria.
+      </p>
+
       <div className="bg-gray-100 border-l-4 border-red-700 p-6 rounded-lg">
         <p className="text-lg mb-4">
           Una defensa técnica y jurídica oportuna puede marcar la diferencia en el
@@ -126,10 +139,14 @@ const ProcesoSancionatorioAmbientalColombia = () => {
           Solicitar defensa especializada
         </a>
       </div>
+<h2 className="text-2xl font-bold text-red-700 mt-12 mb-4">
+  Línea jurisprudencial – sancionatorio ambiental en Colombia
+</h2>
+
+<LineaJurisprudencial />
 
     </section>
   );
 };
 
 export default ProcesoSancionatorioAmbientalColombia;
-
