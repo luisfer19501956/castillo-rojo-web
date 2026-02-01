@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import LineaJurisprudencial from "../components/LineaJurisprudencial";
+import Procsanc from "../components/procsanc";
 
 const ProcesoSancionatorioAmbientalColombia = () => {
   return (
@@ -91,7 +92,10 @@ const ProcesoSancionatorioAmbientalColombia = () => {
         Una defensa adecuada exige un enfoque <strong>jurídico y técnico integrado</strong>,
         que garantice el debido proceso y la correcta valoración probatoria.
       </p>
-
+{/* ===================== */}
+{/* DIAGRAMA CONCEPTUAL */}
+{/* ===================== */}
+<Procsanc />
       <h2 className="text-2xl font-bold text-red-700 mt-12 mb-4">
         ¿Cuándo se inicia un proceso sancionatorio ambiental?
       </h2>
